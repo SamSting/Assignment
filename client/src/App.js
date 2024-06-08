@@ -4,7 +4,7 @@ import Select from 'react-select';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Bar } from 'react-chartjs-2';
-import 'chart.js/auto'; // for Chart.js v3 and above
+import 'chart.js/auto'; // for Chart.js 
 import './App.css';
 
 const App = () => {
@@ -111,7 +111,7 @@ const App = () => {
         <label>
           Topics:
           <Select
-  options={[{ value: '', label: 'Select' }, { value: 'gas', label: 'Gas' }, { value: 'oil', label: 'Oil' }]} // Replace with actual topic options
+  options={[{ value: '', label: 'Select' }, { value: 'gas', label: 'Gas' }, { value: 'oil', label: 'Oil' }]} 
   onChange={option => handleFilterChange('topics', option.value)}
   value={filters.topics ? { value: filters.topics, label: filters.topics } : null}
 />
@@ -121,7 +121,7 @@ const App = () => {
         <label>
           Sector:
           <Select
-  options={[{ value: '', label: 'Select' }, { value: 'Energy', label: 'Energy' }, { value: 'Technology', label: 'Technology' }]} // Replace with actual sector options
+  options={[{ value: '', label: 'Select' }, { value: 'Energy', label: 'Energy' }, { value: 'Technology', label: 'Technology' }]} 
   onChange={option => handleFilterChange('sector', option.value)}
   value={filters.sector ? { value: filters.sector, label: filters.sector } : null}
 />
@@ -131,7 +131,7 @@ const App = () => {
         <label>
           Region:
           <Select
-  options={[{ value: '', label: 'Select' }, { value: 'Northern America', label: 'Northern America' }, { value: 'Europe', label: 'Europe' }]} // Replace with actual region options
+  options={[{ value: '', label: 'Select' }, { value: 'Northern America', label: 'Northern America' }, { value: 'Europe', label: 'Europe' }]} 
   onChange={option => handleFilterChange('region', option.value)}
   value={filters.region ? { value: filters.region, label: filters.region } : null}
 />
@@ -141,7 +141,7 @@ const App = () => {
         <label>
           PEST:
           <Select
-  options={[{ value: '', label: 'Select' }, { value: 'Industries', label: 'Industries' }, { value: 'Economy', label: 'Economy' }]} // Replace with actual PEST options
+  options={[{ value: '', label: 'Select' }, { value: 'Industries', label: 'Industries' }, { value: 'Economy', label: 'Economy' }]} 
   onChange={option => handleFilterChange('PEST', option.value)}
   value={filters.PEST ? { value: filters.PEST, label: filters.PEST } : null}
 />
@@ -151,7 +151,7 @@ const App = () => {
         <label>
           Source:
           <Select
-  options={[{ value: '', label: 'Select' }, { value: 'EIA', label: 'EIA' }, { value: 'UN', label: 'UN' }]} // Replace with actual source options
+  options={[{ value: '', label: 'Select' }, { value: 'EIA', label: 'EIA' }, { value: 'UN', label: 'UN' }]} 
   onChange={option => handleFilterChange('source', option.value)}
   value={filters.source ? { value: filters.source, label: filters.source } : null}
 />
@@ -161,7 +161,7 @@ const App = () => {
         <label>
           Country:
           <Select
-  options={[{ value: '', label: 'Select' }, { value: 'United States of America', label: 'United States of America' }, { value: 'Canada', label: 'Canada' }]} // Replace with actual country options
+  options={[{ value: '', label: 'Select' }, { value: 'United States of America', label: 'United States of America' }, { value: 'Canada', label: 'Canada' }]} 
   onChange={option => handleFilterChange('country', option.value)}
   value={filters.country ? { value: filters.country, label: filters.country } : null}
 />
@@ -171,7 +171,7 @@ const App = () => {
         <label>
           City:
           <Select
-  options={[{ value: '', label: 'Select' }, { value: 'New York', label: 'New York' }, { value: 'Los Angeles', label: 'Los Angeles' }]} // Replace with actual city options
+  options={[{ value: '', label: 'Select' }, { value: 'New York', label: 'New York' }, { value: 'Los Angeles', label: 'Los Angeles' }]} 
   onChange={option => handleFilterChange('city', option.value)}
   value={filters.city ? { value: filters.city, label: filters.city } : null}
 />
