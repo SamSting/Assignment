@@ -12,6 +12,10 @@ app.use(bodyParser.json());
 mongoose.connect('mongodb+srv://srijankdas30:lpmtTLsKBK1ioxFm@cluster01.spnn4tv.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+}).then(() => {
+  console.log('MongoDB connected successfully');
+}).catch((error) => {
+  console.error('Error connecting to MongoDB:', error.message);
 });
 
 const DataSchema = new mongoose.Schema({}, { strict: false });
